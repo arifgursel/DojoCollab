@@ -1,0 +1,204 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+/*============ ELEMENT OVERRIDES==============*/
+html{
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+}
+p, hr{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+a{
+	color: grey;
+	font-style: italic;
+	text-decoration: none;
+
+}
+a:hover{
+	font-style: normal;
+	color: yellow;
+}
+
+/*============ IMAGE MANIPUATION=============*/
+/* Logo Container. This will access the main logo image and used for direct manupulation*/
+#logo img{
+	margin: 15px 10px;
+}
+
+/* Logo Container. This will access the footer logo image and used for direct manupulation*/
+#logo-footer img{
+	width: 50px;
+	height: auto;
+	margin: 15px;
+}
+
+/*============ MAIN LEGO BLOCKS==============*/
+/* Master Container */
+#container{
+	width: 100%;
+	margin: 0px auto;
+}
+/*Main Top Container. This will hold all divs that makeup the first major block*/
+#header{
+	display: block;
+	height: auto;
+	background-color: grey;
+	color: white;
+}
+	#header p{
+		margin: 30px 30px;
+		border-color: 1px solid white;
+	}
+/*Main Content Container. This will hold all divs that makeup the content block and displays as an inline block*/
+#content{
+ 	background-color: grey;
+ 	width: 100%;
+}
+
+#footer{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: black;
+	position: fixed;
+	bottom: 0px;
+
+}
+
+.block{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 15px;
+}
+
+/*============ MAIN NAVIGATION BLOCKS==============*/
+/* Navigation Container. This will hold a horizontol list of elements and display and a block*/
+.nav-hor{
+	height: auto;
+	padding: 5px 15px;
+	margin-top: 0px;
+}
+	.nav-hor p{
+		color: yellow;
+	}
+	.nav-hor ul{
+		
+	}
+	.nav-hor ul li{
+		display: inline;
+		padding-right: 10px;
+		border-right: 2px solid white;
+		margin-left: 10px;
+		margin right: 10px;
+
+	}
+	.nav-hor ul li:first-child{
+		border-left: none;
+		
+	}
+	.nav-hor ul li:last-child{
+		border-right: 3px solid yellow;
+	} 
+
+/*============ CUSTOM & WIDGETS==============*/
+.newsBar{
+	background: #D4DBE3;
+	border-top: 1px solid black;
+	display: block;
+	margin: 0px 0px;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+.linkBar{
+	background: black;
+	border-top: 1px solid yellow;
+	display: block;
+	margin: 0px 0px;
+	font-size: 10px;
+	padding: 5px 20px;
+}
+.blogstrip{
+	display: block;
+	padding: 50px;
+	
+}
+
+.blogpost{
+	display: block;
+	height: 250px;
+	width: 100%;
+	border: 2px solid yellow;
+	background-color: white;
+	color: black;
+	margin-bottom: 75px;
+	0px 0px;
+}
+	
+	.blogpost p:first-child{
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 1em;
+		font-weight: bold;
+		background-color: grey;
+		color: white;
+		border-radius: 5px;
+		/*clear: left;    	Activate to keep text from wrapping when elements floated left
+		clear: right; 	Activate to keep text from wrapping when elements floated right*/
+	}
+	.blogpost p{
+		margin: 30px 0px;
+		font-size: .8em;
+		border-color: 1px red green;
+		padding: 5px;
+		/*clear: left;    	Activate to keep text from wrapping when elements floated left*/
+		/*clear: right; 	Activate to keep text from wrapping when elements floated right*/
+	}
+	.blogpost p:last-child{
+		color: tomato;
+		/*padding-bottom: 50px;*/
+		/*clear: left;    	Activate to keep text from wrapping when elements floated left
+		clear: right; 	Activate to keep text from wrapping when elements floated right*/
+	}
+
+
+.blogpic{
+	width: 200px;
+	height: 200px;
+	border: 5px solid black;
+	margin: 20px 20px;
+	float: left;
+}
+
+.bold{
+	font-style: bold
+}
+.yellow{
+	color: yellow;
+	background-color: black;
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	/*float: left;*/
+}
+.grey{
+	color: grey;
+	background-color: black;
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	/*float: left;*/
+}
+.white{
+	color: white;
+	background-color: black;
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	/*float: left;*/
+}
